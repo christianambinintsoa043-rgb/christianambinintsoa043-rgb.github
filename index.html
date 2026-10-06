@@ -1,0 +1,1654 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Christian Marin Ambinintsoa | CHRIS PRO</title>
+
+<meta name="description"
+content="Portfolio professionnel de Christian Marin Ambinintsoa - Assistant Administratif, Data Entry et Bureautique.">
+
+<style>
+
+/* =========================================================
+   CHRIS PRO 3 PREMIUM
+   ========================================================= */
+
+:root{
+    --dark:#07111f;
+    --dark2:#0b1728;
+    --blue:#3b82f6;
+    --blue2:#60a5fa;
+    --white:#ffffff;
+    --light:#f4f7fb;
+    --text:#334155;
+    --muted:#94a3b8;
+    --border:rgba(255,255,255,.10);
+    --shadow:0 25px 70px rgba(2,8,23,.16);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:var(--light);
+    color:var(--text);
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:auto;
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    background:rgba(7,17,31,.88);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.navbar{
+    height:76px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:900;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:var(--blue2);
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:#dbeafe;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#60a5fa;
+}
+
+.nav-contact{
+    padding:10px 17px;
+    border:1px solid rgba(96,165,250,.5);
+    border-radius:50px;
+}
+
+.menu{
+    display:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.hero-section{
+    min-height:100vh;
+    padding-top:76px;
+    background:
+        radial-gradient(circle at 85% 20%,rgba(59,130,246,.20),transparent 30%),
+        radial-gradient(circle at 10% 80%,rgba(37,99,235,.14),transparent 30%),
+        linear-gradient(135deg,#050c17,#0a1728 55%,#07111f);
+    color:white;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero{
+    display:grid;
+    grid-template-columns:1.15fr .85fr;
+    align-items:center;
+    gap:80px;
+    padding:80px 0;
+}
+
+.hero-label{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:8px 15px;
+    border-radius:50px;
+    border:1px solid rgba(96,165,250,.3);
+    background:rgba(59,130,246,.08);
+    color:#93c5fd;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:1.5px;
+    margin-bottom:25px;
+}
+
+.status-dot{
+    width:8px;
+    height:8px;
+    background:#4ade80;
+    border-radius:50%;
+    box-shadow:0 0 12px #4ade80;
+}
+
+.hero h1{
+    font-size:clamp(45px,6vw,76px);
+    line-height:1.03;
+    letter-spacing:-2px;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#60a5fa;
+}
+
+.hero h2{
+    font-size:21px;
+    font-weight:500;
+    color:#cbd5e1;
+    margin-bottom:24px;
+}
+
+.hero-description{
+    max-width:650px;
+    color:#94a3b8;
+    font-size:16px;
+    margin-bottom:32px;
+}
+
+.buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:9px;
+    padding:14px 22px;
+    border-radius:10px;
+    font-weight:800;
+    font-size:14px;
+    transition:.3s;
+}
+
+.btn-primary{
+    background:#3b82f6;
+    color:white;
+    box-shadow:0 10px 30px rgba(59,130,246,.28);
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    background:#2563eb;
+}
+
+.btn-outline{
+    color:white;
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.04);
+}
+
+.btn-outline:hover{
+    background:rgba(255,255,255,.09);
+    transform:translateY(-3px);
+}
+
+
+/* =========================================================
+   PHOTO
+   ========================================================= */
+
+.photo-area{
+    position:relative;
+    display:flex;
+    justify-content:center;
+}
+
+.photo-glow{
+    position:absolute;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    background:#2563eb;
+    filter:blur(90px);
+    opacity:.22;
+}
+
+.photo-card{
+    position:relative;
+    width:350px;
+    padding:12px;
+    border-radius:28px;
+    background:linear-gradient(
+        145deg,
+        rgba(255,255,255,.18),
+        rgba(255,255,255,.03)
+    );
+    border:1px solid rgba(255,255,255,.15);
+    box-shadow:0 30px 80px rgba(0,0,0,.35);
+    transform:rotate(2deg);
+    transition:.5s;
+}
+
+.photo-card:hover{
+    transform:rotate(0deg) translateY(-8px);
+}
+
+.photo{
+    width:100%;
+    aspect-ratio:1/1;
+    overflow:hidden;
+    border-radius:20px;
+    background:#172235;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+}
+
+.photo-info{
+    padding:17px 10px 8px;
+    text-align:center;
+}
+
+.photo-info strong{
+    display:block;
+    font-size:18px;
+    color:white;
+}
+
+.photo-info span{
+    color:#94a3b8;
+    font-size:13px;
+}
+
+
+/* =========================================================
+   STATS
+   ========================================================= */
+
+.stats{
+    background:white;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.stat{
+    padding:28px;
+    text-align:center;
+    border-right:1px solid #e5e7eb;
+}
+
+.stat:last-child{
+    border-right:none;
+}
+
+.stat strong{
+    display:block;
+    font-size:27px;
+    color:#0f172a;
+}
+
+.stat span{
+    font-size:13px;
+    color:#64748b;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+section:not(.hero-section){
+    padding:100px 0;
+}
+
+.section-heading{
+    max-width:650px;
+    margin-bottom:55px;
+}
+
+.section-heading.center{
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.section-tag{
+    color:#2563eb;
+    font-size:12px;
+    font-weight:900;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    margin-bottom:12px;
+}
+
+.section-heading h2{
+    font-size:40px;
+    line-height:1.15;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.section-heading p{
+    color:#64748b;
+}
+
+
+/* =========================================================
+   ABOUT
+   ========================================================= */
+
+.about{
+    background:white;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:start;
+}
+
+.about-text h3{
+    font-size:27px;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    color:#64748b;
+    margin-bottom:17px;
+}
+
+.about-list{
+    display:grid;
+    gap:14px;
+}
+
+.about-item{
+    padding:17px 20px;
+    background:#f8fafc;
+    border:1px solid #e5e7eb;
+    border-radius:12px;
+}
+
+.about-item strong{
+    color:#0f172a;
+    display:block;
+    margin-bottom:3px;
+}
+
+.about-item span{
+    color:#64748b;
+    font-size:14px;
+}
+
+
+/* =========================================================
+   SKILLS
+   ========================================================= */
+
+.skills{
+    background:#f4f7fb;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.skill{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    border:1px solid #e7ebf1;
+    transition:.35s;
+}
+
+.skill:hover{
+    transform:translateY(-7px);
+    box-shadow:var(--shadow);
+    border-color:#bfdbfe;
+}
+
+.skill-icon{
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:13px;
+    background:#eff6ff;
+    font-size:23px;
+    margin-bottom:20px;
+}
+
+.skill h3{
+    color:#0f172a;
+    margin-bottom:9px;
+}
+
+.skill p{
+    color:#64748b;
+    font-size:14px;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+   ========================================================= */
+
+.experience{
+    background:white;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+    position:relative;
+}
+
+.timeline:before{
+    content:"";
+    position:absolute;
+    left:18px;
+    top:5px;
+    bottom:5px;
+    width:2px;
+    background:#dbeafe;
+}
+
+.timeline-item{
+    position:relative;
+    padding-left:60px;
+    margin-bottom:35px;
+}
+
+.timeline-dot{
+    position:absolute;
+    left:7px;
+    top:5px;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background:#3b82f6;
+    border:6px solid #dbeafe;
+}
+
+.timeline-card{
+    padding:28px;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    background:#fafcff;
+}
+
+.timeline-card h3{
+    color:#0f172a;
+    font-size:21px;
+}
+
+.date{
+    color:#2563eb;
+    font-size:13px;
+    font-weight:800;
+    margin:5px 0 12px;
+}
+
+.timeline-card p{
+    color:#64748b;
+    font-size:14px;
+}
+
+
+/* =========================================================
+   CV
+   ========================================================= */
+
+.cv-section{
+    background:
+        linear-gradient(135deg,#07111f,#0d1d32);
+    color:white;
+}
+
+.cv-box{
+    display:grid;
+    grid-template-columns:1fr auto;
+    gap:40px;
+    align-items:center;
+    padding:50px;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:25px;
+    background:rgba(255,255,255,.04);
+    box-shadow:0 30px 70px rgba(0,0,0,.2);
+}
+
+.cv-box .section-tag{
+    color:#60a5fa;
+}
+
+.cv-box h2{
+    font-size:35px;
+    margin-bottom:12px;
+}
+
+.cv-box p{
+    color:#94a3b8;
+    max-width:650px;
+}
+
+.cv-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact{
+    background:#f4f7fb;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.contact-card{
+    background:white;
+    padding:30px;
+    border-radius:17px;
+    border:1px solid #e5e7eb;
+    text-align:center;
+    transition:.3s;
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+.contact-icon{
+    font-size:28px;
+    margin-bottom:12px;
+}
+
+.contact-card h3{
+    color:#0f172a;
+    margin-bottom:7px;
+}
+
+.contact-card p,
+.contact-card a{
+    color:#64748b;
+    font-size:14px;
+    word-break:break-word;
+}
+
+.contact-card a:hover{
+    color:#2563eb;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+footer{
+    background:#050c17;
+    color:white;
+    padding:35px 0;
+    text-align:center;
+}
+
+.footer-logo{
+    font-size:22px;
+    font-weight:900;
+    margin-bottom:8px;
+}
+
+.footer-logo span{
+    color:#60a5fa;
+}
+
+footer p{
+    color:#64748b;
+    font-size:13px;
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero-text{
+    animation:fadeUp 1s ease;
+}
+
+.photo-area{
+    animation:fadeUp 1.2s ease;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:900px){
+
+    .nav-links{
+        position:absolute;
+        top:76px;
+        left:0;
+        width:100%;
+        display:none;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        background:#07111f;
+        border-top:1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        border-bottom:1px solid rgba(255,255,255,.07);
+    }
+
+    .nav-links a{
+        display:block;
+        padding:16px 25px;
+    }
+
+    .nav-contact{
+        border:0;
+        border-radius:0;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .hero{
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:50px;
+    }
+
+    .hero-description{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .photo-card{
+        width:310px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .cv-box{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .cv-box p{
+        margin:auto;
+    }
+
+    .cv-buttons{
+        flex-direction:row;
+        justify-content:center;
+    }
+
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .container{
+        width:90%;
+    }
+
+    .hero{
+        padding:55px 0;
+    }
+
+    .hero h1{
+        font-size:44px;
+    }
+
+    .hero h2{
+        font-size:18px;
+    }
+
+    .photo-card{
+        width:280px;
+    }
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat{
+        border-right:none;
+        border-bottom:1px solid #e5e7eb;
+    }
+
+    .stat:last-child{
+        border-bottom:none;
+    }
+
+    section:not(.hero-section){
+        padding:75px 0;
+    }
+
+    .section-heading h2{
+        font-size:32px;
+    }
+
+    .skills-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cv-box{
+        padding:30px 22px;
+    }
+
+    .cv-box h2{
+        font-size:28px;
+    }
+
+    .cv-buttons{
+        flex-direction:column;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header>
+
+<div class="container navbar">
+
+    <a href="#accueil" class="logo">
+        CHRIS<span>PRO</span>
+    </a>
+
+    <div class="menu" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="#accueil">Accueil</a>
+        </li>
+
+        <li>
+            <a href="#apropos">À propos</a>
+        </li>
+
+        <li>
+            <a href="#competences">Compétences</a>
+        </li>
+
+        <li>
+            <a href="#experience">Expérience</a>
+        </li>
+
+        <li>
+            <a href="#cv">CV</a>
+        </li>
+
+        <li>
+            <a href="#contact" class="nav-contact">
+                Contact
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="hero-section" id="accueil">
+
+<div class="container hero">
+
+
+    <div class="hero-text">
+
+        <div class="hero-label">
+            <span class="status-dot"></span>
+            PORTFOLIO PROFESSIONNEL
+        </div>
+
+
+        <h1>
+            Christian Marin
+            <span>Ambinintsoa</span>
+        </h1>
+
+
+        <h2>
+            Assistant Administratif
+            <br>
+            Data Entry • Bureautique
+        </h2>
+
+
+        <p class="hero-description">
+            Bienvenue sur mon espace professionnel.
+            Je suis une personne sérieuse, organisée,
+            responsable et motivée, avec des compétences
+            en saisie de données, bureautique,
+            Microsoft Excel et Google Sheets.
+        </p>
+
+
+        <div class="buttons">
+
+            <a href="#cv" class="btn btn-primary">
+                📄 Consulter mon CV
+            </a>
+
+            <a href="#contact" class="btn btn-outline">
+                ✉ Me contacter
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- PHOTO -->
+
+    <div class="photo-area">
+
+        <div class="photo-glow"></div>
+
+        <div class="photo-card">
+
+            <div class="photo">
+
+                <img
+                    src="chris.jpg"
+                    alt="Christian Marin Ambinintsoa"
+                >
+
+            </div>
+
+            <div class="photo-info">
+
+                <strong>
+                    Christian Marin Ambinintsoa
+                </strong>
+
+                <span>
+                    Assistant Administratif • Data Entry
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<div class="stats">
+
+<div class="container stats-grid">
+
+    <div class="stat">
+
+        <strong>Data Entry</strong>
+
+        <span>
+            Saisie et organisation des données
+        </span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <strong>Excel</strong>
+
+        <span>
+            Tableaux, tri, filtres et formules
+        </span>
+
+    </div>
+
+
+    <div class="stat">
+
+        <strong>100%</strong>
+
+        <span>
+            Sérieux et motivation professionnelle
+        </span>
+
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- =====================================================
+     À PROPOS
+===================================================== -->
+
+<section class="about" id="apropos">
+
+<div class="container">
+
+
+    <div class="section-heading">
+
+        <div class="section-tag">
+            PROFIL
+        </div>
+
+        <h2>
+            À propos de moi
+        </h2>
+
+        <p>
+            Un profil sérieux, motivé et prêt à évoluer
+            dans un environnement professionnel.
+        </p>
+
+    </div>
+
+
+    <div class="about-grid">
+
+
+        <div class="about-text">
+
+            <h3>
+                Un professionnel fiable et motivé
+            </h3>
+
+            <p>
+                Je m'appelle Christian Marin Ambinintsoa
+                et je suis basé à Mahajanga, Madagascar.
+            </p>
+
+            <p>
+                Je m'intéresse particulièrement aux domaines
+                de la saisie de données, de l'assistance
+                administrative et de la bureautique.
+            </p>
+
+            <p>
+                Je possède des connaissances pratiques
+                en Microsoft Word, Microsoft Excel
+                et Google Sheets.
+            </p>
+
+            <p>
+                Sérieux, organisé, ponctuel et responsable,
+                je suis également motivé pour apprendre
+                et développer continuellement mes compétences.
+            </p>
+
+        </div>
+
+
+        <div class="about-list">
+
+
+            <div class="about-item">
+
+                <strong>
+                    📍 Localisation
+                </strong>
+
+                <span>
+                    Mahajanga, Madagascar
+                </span>
+
+            </div>
+
+
+            <div class="about-item">
+
+                <strong>
+                    🎓 Formation
+                </strong>
+
+                <span>
+                    CEPE • BEPEC • Niveau Terminale
+                </span>
+
+            </div>
+
+
+            <div class="about-item">
+
+                <strong>
+                    💻 Domaine recherché
+                </strong>
+
+                <span>
+                    Data Entry • Administration • Bureautique
+                </span>
+
+            </div>
+
+
+            <div class="about-item">
+
+                <strong>
+                    ⭐ Qualités
+                </strong>
+
+                <span>
+                    Sérieux • Organisé • Ponctuel • Responsable
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     COMPÉTENCES
+===================================================== -->
+
+<section class="skills" id="competences">
+
+<div class="container">
+
+
+    <div class="section-heading center">
+
+        <div class="section-tag">
+            EXPERTISE
+        </div>
+
+        <h2>
+            Mes compétences
+        </h2>
+
+        <p>
+            Les compétences que je peux mettre au service
+            d'une entreprise ou d'un projet.
+        </p>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                ⌨️
+            </div>
+
+            <h3>
+                Data Entry
+            </h3>
+
+            <p>
+                Saisie de données, vérification,
+                organisation et mise à jour
+                des informations.
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                📊
+            </div>
+
+            <h3>
+                Microsoft Excel
+            </h3>
+
+            <p>
+                Création de tableaux, tri,
+                filtrage et utilisation
+                de formules de base.
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                📑
+            </div>
+
+            <h3>
+                Google Sheets
+            </h3>
+
+            <p>
+                Organisation de données,
+                tableaux et travail
+                sur documents partagés.
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                📝
+            </div>
+
+            <h3>
+                Microsoft Word
+            </h3>
+
+            <p>
+                Saisie, modification et mise
+                en forme de documents
+                professionnels.
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                🗂️
+            </div>
+
+            <h3>
+                Organisation
+            </h3>
+
+            <p>
+                Classement, organisation
+                et gestion méthodique
+                des informations.
+            </p>
+
+        </div>
+
+
+        <div class="skill">
+
+            <div class="skill-icon">
+                🤝
+            </div>
+
+            <h3>
+                Professionnalisme
+            </h3>
+
+            <p>
+                Sérieux, ponctualité,
+                responsabilité et volonté
+                d'apprendre.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     EXPÉRIENCE
+===================================================== -->
+
+<section class="experience" id="experience">
+
+<div class="container">
+
+
+    <div class="section-heading center">
+
+        <div class="section-tag">
+            PARCOURS
+        </div>
+
+        <h2>
+            Expérience professionnelle
+        </h2>
+
+        <p>
+            Mon parcours et les responsabilités
+            que j'ai exercées.
+        </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>
+                    Agent de sécurité
+                </h3>
+
+                <div class="date">
+                    2017 — 2023
+                </div>
+
+                <p>
+                    <strong>
+                        Maison Caroline Marovaza Be
+                    </strong>
+                    — Analalava, Madagascar.
+                </p>
+
+                <p>
+                    Surveillance, sécurité des lieux,
+                    respect des consignes et sens
+                    des responsabilités.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>
+                    Maître nageur
+                </h3>
+
+                <div class="date">
+                    Maison Caroline Marovaza Be
+                </div>
+
+                <p>
+                    Analalava, Madagascar.
+                </p>
+
+                <p>
+                    Surveillance des espaces de baignade,
+                    prévention et respect des règles
+                    de sécurité.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>
+                    Formation pratique Data Entry
+                </h3>
+
+                <div class="date">
+                    Compétences bureautiques
+                </div>
+
+                <p>
+                    Apprentissage pratique de Microsoft Excel,
+                    Google Sheets, saisie de données,
+                    tri, filtrage et organisation
+                    des informations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CV
+===================================================== -->
+
+<section class="cv-section" id="cv">
+
+<div class="container">
+
+
+    <div class="cv-box">
+
+        <div>
+
+            <div class="section-tag">
+                DOCUMENT PROFESSIONNEL
+            </div>
+
+            <h2>
+                Mon Curriculum Vitae
+            </h2>
+
+            <p>
+                Consultez mon CV pour découvrir mon parcours,
+                mes compétences et mon expérience professionnelle.
+            </p>
+
+        </div>
+
+
+        <div class="cv-buttons">
+
+            <a
+                href="CV_Christian_Marin_Ambinintsoa_Data_Entry_1_Page.docx"
+                target="_blank"
+                class="btn btn-primary"
+            >
+                📄 CV Word
+            </a>
+
+
+            <a
+                href="CV_Christian_Marin_Ambinintsoa_Data_Entry_1_Page.pdf"
+                target="_blank"
+                class="btn btn-outline"
+            >
+                📕 CV PDF
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact" id="contact">
+
+<div class="container">
+
+
+    <div class="section-heading center">
+
+        <div class="section-tag">
+            CONTACT
+        </div>
+
+        <h2>
+            Parlons de votre projet
+        </h2>
+
+        <p>
+            Pour une opportunité professionnelle ou
+            une collaboration, vous pouvez me contacter.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📧
+            </div>
+
+            <h3>
+                Email
+            </h3>
+
+            <a href="mailto:christianambinintsoa043@gmail.com">
+                christianambinintsoa043@gmail.com
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📱
+            </div>
+
+            <h3>
+                WhatsApp
+            </h3>
+
+            <a
+                href="https://wa.me/261375513345"
+                target="_blank"
+            >
+                +261 375 513 345
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                📍
+            </div>
+
+            <h3>
+                Localisation
+            </h3>
+
+            <p>
+                Mahajanga, Madagascar
+            </p>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+<div class="container">
+
+    <div class="footer-logo">
+        CHRIS<span>PRO</span>
+    </div>
+
+    <p>
+        © 2026 Christian Marin Ambinintsoa
+    </p>
+
+    <p>
+        Assistant Administratif • Data Entry • Bureautique
+    </p>
+
+</div>
+
+</footer>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script>
+
+function toggleMenu(){
+
+    const nav = document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+document.querySelectorAll(".nav-links a").forEach(function(link){
+
+    link.addEventListener("click",function(){
+
+        document
+        .getElementById("navLinks")
+        .classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+
+</body>
+</html>
+CHRIS PRO 3
+│
+├── index.html
+├── chris.jpg
+├── CV_Christian_Marin_Ambinintsoa_Data_Entry_1_Page.docx
+└── CV_Christian_Marin_Ambinintsoa_Data_Entry_1_Page.pdf
